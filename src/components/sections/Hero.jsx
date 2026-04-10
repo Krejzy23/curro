@@ -13,8 +13,8 @@ const Hero = () => {
   return (
     <section className="relative overflow-hidden px-6 pt-24 pb-20 md:px-10 lg:px-16 lg:pt-32 lg:pb-28">
       {/* glow */}
-      <div className="pointer-events-none absolute -top-24 right-[-120px] h-80 w-80 rounded-full bg-lime-400/10 blur-3xl" />
-      <div className="pointer-events-none absolute bottom-[-120px] left-[-80px] h-72 w-72 rounded-full bg-lime-300/10 blur-3xl" />
+      <div className="pointer-events-none absolute top-24 left-40 h-52 w-52 rounded-full bg-lime-400/10 blur-3xl" />
+      <div className="pointer-events-none absolute top-32 left-52 h-72 w-72 rounded-full bg-lime-500/10 blur-3xl" />
 
       <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
         {/* LEFT */}
@@ -55,7 +55,7 @@ const Hero = () => {
           </div>
 
           <div className="mt-10 grid gap-3 sm:grid-cols-3">
-            <div className="rounded-[24px] border border-white/10 bg-zinc-900/70 p-4">
+            <div className="rounded-3xl border border-white/10 bg-zinc-900/70 p-4">
               <div className="mb-3 inline-flex rounded-2xl bg-lime-400 p-2 text-black">
                 <Timer size={18} />
               </div>
@@ -67,7 +67,7 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="rounded-[24px] border border-white/10 bg-zinc-900/70 p-4">
+            <div className="rounded-3xl border border-white/10 bg-zinc-900/70 p-4">
               <div className="mb-3 inline-flex rounded-2xl bg-lime-400 p-2 text-black">
                 <Target size={18} />
               </div>
@@ -79,7 +79,7 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="rounded-[24px] border border-white/10 bg-zinc-900/70 p-4">
+            <div className="rounded-3xl border border-white/10 bg-zinc-900/70 p-4">
               <div className="mb-3 inline-flex rounded-2xl bg-lime-400 p-2 text-black">
                 <Users size={18} />
               </div>
@@ -93,7 +93,7 @@ const Hero = () => {
 
         {/* RIGHT */}
         <div className="relative flex justify-center lg:justify-end">
-          <div className="relative w-full max-w-[560px]">
+          <div className="relative w-full max-w-140">
             {/* floating card top */}
             <div className="absolute left-0 top-10 z-20 hidden w-52 rounded-[28px] border border-lime-400/30 bg-zinc-900/90 p-4 shadow-2xl backdrop-blur md:block">
               <div className="flex items-center justify-between">
@@ -107,7 +107,7 @@ const Hero = () => {
             </div>
 
             {/* screenshot / mockup */}
-            <div className="relative mx-auto w-[300px] md:w-[340px]">
+            <div className="relative mx-auto w-75 md:w-85">
               <div className="rounded-[42px] border border-white/10 bg-zinc-950 p-2 shadow-[0_30px_100px_rgba(0,0,0,0.55)]">
                 <div className="overflow-hidden rounded-[34px] border border-white/10 bg-zinc-900">
                   <img
