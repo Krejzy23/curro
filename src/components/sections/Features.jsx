@@ -1,9 +1,9 @@
 import React from "react";
 import { SportShoe, Target, Users } from "lucide-react";
 
-// import trackingImage from "../../assets/features/tracking-collage.png";
+import trackingImage from "../../assets/image/tracking-collage.png";
 // import progressImage from "../../assets/features/progress-collage.png";
-// import communityImage from "../../assets/features/community-collage.png";
+import communityImage from "../../assets/image/community-collage.png";
 
 const features = [
   {
@@ -25,7 +25,7 @@ const features = [
       { label: "Tempo", type: "tempo" },
     ],
     icon: SportShoe,
-    image: "",
+    image: trackingImage,
   },
   {
     id: "progress",
@@ -53,7 +53,7 @@ const features = [
       "Vlastní profil s bio a aktivitou",
     ],
     icon: Users,
-    image: "",
+    image: communityImage,
   },
 ];
 
@@ -117,10 +117,10 @@ const FeatureBlock = ({ feature, reverse = false }) => {
       </div>
 
       <div className={reverse ? "lg:order-1" : ""}>
-        <div className="relative mx-auto max-w-140">
+        <div className="relative mx-auto max-w-105">
           <div className="pointer-events-none absolute -inset-6 rounded-[40px] bg-lime-400/5 blur-2xl" />
 
-          <div className="relative rounded-4xl border border-white/10 bg-zinc-900/80 p-3 shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur">
+          <div className="relative rounded-4xl border border-white/10 bg-zinc-950/80 p-3 shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur">
             <div className="flex items-center justify-between border-b border-white/10 px-3 pb-3">
               <div className="flex items-center gap-2">
                 <span className="h-3 w-3 rounded-full bg-red-500 shadow-sm transition hover:scale-110 shadow-red-500/30" />
@@ -132,7 +132,7 @@ const FeatureBlock = ({ feature, reverse = false }) => {
               </span>
             </div>
 
-            <div className="mt-3 overflow-hidden rounded-[24px] border border-white/10 bg-zinc-950">
+            <div className="mt-3 overflow-hidden rounded-3xl border border-white/10 bg-zinc-950 max-w-lg">
               <img
                 src={feature.image}
                 alt={feature.title}
