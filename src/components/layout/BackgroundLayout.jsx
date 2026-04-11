@@ -19,7 +19,7 @@ const BackgroundLayout = ({ children }) => {
           backgroundRepeat: "repeat",
           backgroundSize: "800px",
           backgroundPosition: "center",
-          opacity: 0.06,
+          opacity: 0.03,
           pointerEvents: "none",
           zIndex: 0,
         }}

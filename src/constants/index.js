@@ -27,6 +27,7 @@ export const navItems = [
   { label: "Statistiky", id: "statistics" },
   { label: "Jak funguje", id: "screenshots" },
   { label: "FAQ", id: "faq" },
+  { label: "Download", id: "download" },
 ];
 
 //Features page
@@ -95,18 +96,21 @@ export const runTypeAccent = {
 export const statisticsItems = [
   {
     icon: LineChart,
-    title: "Tempo v čase",
-    text: "Sleduj vývoj průměrného tempa napříč měsíci a odhaluj skutečný progres.",
+    eyebrow: "Progres",
+    title: "Poznej, jestli se skutečně posouváš",
+    text: "Měsíční vývoj tempa a objemu ti ukáže, jestli tvůj trénink vede ke zlepšení, ne jen k dalším číslům.",
   },
   {
     icon: Flame,
-    title: "Konzistence běhání",
-    text: "Heatmapa i přehled aktivit pomáhají budovat pravidelnost a udržet si návyk.",
+    eyebrow: "Konzistence",
+    title: "Uvidíš, jak pravidelně opravdu běháš",
+    text: "Heatmapa a přehled aktivit odhalí, jestli si držíš návyk, nebo jestli ti mezi běhy vznikají zbytečné výpadky.",
   },
   {
     icon: PieChart,
-    title: "Rozložení tréninku",
-    text: "Získej rychlý přehled o typech běhů a udržuj lepší rovnováhu v tréninku.",
+    eyebrow: "Balanc tréninku",
+    title: "Získej lepší rovnováhu mezi typy běhů",
+    text: "Rozložení easy, long, tempo a dalších běhů ti pomůže udržet pestrost i zdravější tréninkový mix.",
   },
 ];
 

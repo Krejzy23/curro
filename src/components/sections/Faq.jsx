@@ -16,11 +16,11 @@ const Faq = () => {
             FAQ
           </div>
 
-          <h2 className="mt-6 text-4xl font-black tracking-tight text-white md:text-5xl">
+          <h2 className="mt-6 text-3xl font-black tracking-tight text-white md:text-5xl">
             Často kladené otázky
           </h2>
 
-          <p className="mt-5 max-w-xl text-base leading-7 text-zinc-400 md:text-lg">
+          <p className="mt-5 max-w-xl text-base leading-6 text-zinc-400 md:text-lg">
             Všechno důležité o aplikaci CURRO na jednom místě. Rychle zjistíš,
             jak funguje tracking, statistiky i komunitní část aplikace.
           </p>

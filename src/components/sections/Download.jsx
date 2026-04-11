@@ -23,7 +23,7 @@ const Download = () => {
                 Stáhni si CURRO
               </div>
 
-              <h2 className="mt-6 max-w-3xl text-4xl font-black tracking-tight text-white md:text-5xl lg:text-6xl">
+              <h2 className="mt-6 max-w-3xl text-3xl font-black tracking-tight text-white md:text-5xl lg:text-6xl">
                 Připravený posunout své běhání dál?
               </h2>
 
@@ -72,7 +72,7 @@ const Download = () => {
                     <p className="text-sm font-semibold uppercase tracking-[2px] text-lime-400">
                       CURRO
                     </p>
-                    <p className="mt-3 text-3xl font-black text-white">
+                    <p className="mt-3 text-2xl md:text-3xl font-black text-white">
                       Všechno pro tvoje běhání
                     </p>
                     <p className="mt-3 text-sm leading-6 text-zinc-400">
@@ -121,11 +121,6 @@ const Download = () => {
             </div>
           </div>
         </div>
-
-        <p className="mt-6 text-center text-sm text-zinc-500">
-          Dostupnost odkazů do App Store a Google Play doplníš podle aktuálního
-          vydání aplikace.
-        </p>
       </div>
     </section>
   );

@@ -1,12 +1,6 @@
 import React from "react";
 import appScreenshot from "../../assets/homescreenHero.png";
-import {
-  Timer,
-  Users,
-  Heart,
-  MessageCircle,
-  Target,
-} from "lucide-react";
+import { Timer, Users, Heart, MessageCircle, Target } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -23,7 +17,7 @@ const Hero = () => {
             Běžecká aplikace pro výkon i motivaci
           </div>
 
-          <h1 className="mt-6 max-w-3xl text-5xl font-black tracking-tight text-white md:text-6xl xl:text-7xl">
+          <h1 className="mt-6 max-w-3xl text-4xl font-black tracking-tight text-white md:text-6xl xl:text-7xl">
             Sleduj své běhy.
             <br />
             Buduj <span className="text-lime-400">konzistenci</span>.
@@ -31,62 +25,38 @@ const Hero = () => {
             Sdílej <span className="text-lime-400">progres</span>.
           </h1>
 
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-400 md:text-xl">
+          <p className="mt-6 max-w-2xl leading-6 text-zinc-400 md:text-xl">
             CURRO spojuje tracking vzdálenosti, času a tempa s přehlednými
             statistikami, týdenními cíli a komunitním feedem, který tě udrží v
             pohybu.
           </p>
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-8 flex gap-4 flex-row">
             <a
               href="#download"
-              className="inline-flex items-center justify-center rounded-2xl bg-lime-400 px-6 py-4 text-base font-extrabold text-black transition hover:scale-[1.02]"
+              className="inline-flex items-center justify-center rounded-2xl bg-lime-400 px-3 py-2 lg:px-6 lg:py-4 text-sm lg:text-base font-extrabold text-black transition hover:scale-[1.02]"
             >
               Stáhnout aplikaci
             </a>
 
             <a
               href="#features"
-              className="inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-6 py-4 text-base font-bold text-white transition hover:bg-white/10"
+              className="inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-3 py-2 lg:px-6 lg:py-4 text-sm lg:text-base font-bold text-white transition hover:bg-white/10"
             >
               Prozkoumat funkce
             </a>
           </div>
 
-          <div className="mt-10 grid gap-3 sm:grid-cols-3">
-            <div className="rounded-3xl border border-white/10 bg-zinc-900/70 p-4">
-              <div className="mb-3 inline-flex rounded-2xl bg-lime-400 p-2 text-black">
-                <Timer size={18} />
-              </div>
-              <p className="text-sm font-semibold text-white">
-                Tempo, čas, vzdálenost
-              </p>
-              <p className="mt-1 text-sm text-zinc-500">
-                Každý běh přehledně zaznamenaný.
-              </p>
-            </div>
-
-            <div className="rounded-3xl border border-white/10 bg-zinc-900/70 p-4">
-              <div className="mb-3 inline-flex rounded-2xl bg-lime-400 p-2 text-black">
-                <Target size={18} />
-              </div>
-              <p className="text-sm font-semibold text-white">
-                Cíle a statistiky
-              </p>
-              <p className="mt-1 text-sm text-zinc-500">
-                Sleduj progres a drž si streak.
-              </p>
-            </div>
-
-            <div className="rounded-3xl border border-white/10 bg-zinc-900/70 p-4">
-              <div className="mb-3 inline-flex rounded-2xl bg-lime-400 p-2 text-black">
-                <Users size={18} />
-              </div>
-              <p className="text-sm font-semibold text-white">Komunita běžců</p>
-              <p className="mt-1 text-sm text-zinc-500">
-                Sdílej aktivity, lajkuj a komentuj.
-              </p>
-            </div>
+          <div className="mt-10 flex flex-wrap gap-3">
+            <span className="rounded-full border border-white/10 bg-zinc-900/70 px-4 py-2 text-sm font-medium text-zinc-300">
+              Tempo, čas a vzdálenost
+            </span>
+            <span className="rounded-full border border-white/10 bg-zinc-900/70 px-4 py-2 text-sm font-medium text-zinc-300">
+              Statistiky a týdenní cíle
+            </span>
+            <span className="rounded-full border border-white/10 bg-zinc-900/70 px-4 py-2 text-sm font-medium text-zinc-300">
+              Sdílené běhy a komunita
+            </span>
           </div>
         </div>
 
@@ -102,9 +72,8 @@ const Hero = () => {
                 <Timer size={18} className="text-lime-400" />
               </div>
               <div className="flex flex-row items-center">
-              <p className="mt-4 text-3xl font-black text-white">5:23</p>
-              <p className="text-lg px-2 mt-6 text-zinc-500">min / km</p>
-
+                <p className="mt-4 text-3xl font-black text-white">5:23</p>
+                <p className="text-lg px-2 mt-6 text-zinc-500">min / km</p>
               </div>
             </div>
 

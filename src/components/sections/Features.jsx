@@ -15,7 +15,7 @@ const Features = () => {
             Funkce aplikace
           </div>
 
-          <h2 className="mt-6 text-4xl font-black tracking-tight text-white md:text-5xl">
+          <h2 className="mt-6 text-3xl font-black tracking-tight text-white md:text-5xl">
             Všechno, co potřebuješ pro lepší běhání
           </h2>
 
