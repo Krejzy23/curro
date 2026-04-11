@@ -1,54 +1,11 @@
 import React, { useMemo, useState } from "react";
-import { BarChart3, CalendarDays, Footprints, LayoutDashboard, User } from "lucide-react";
+import { tourItems } from "../../constants";
 
 // import overviewVideo from "../../assets/videos/overview.mp4";
 // import runsVideo from "../../assets/videos/runs.mp4";
 // import calendarVideo from "../../assets/videos/calendar.mp4";
 // import statsVideo from "../../assets/videos/stats.mp4";
 // import profileVideo from "../../assets/videos/profile.mp4";
-
-const tourItems = [
-  {
-    id: "overview",
-    title: "Přehled",
-    description:
-      "Rychlý souhrn aktivit, měsíčních statistik a aktuální formy na jednom místě.",
-    icon: LayoutDashboard,
-    // video: overviewVideo,
-  },
-  {
-    id: "runs",
-    title: "Běhy",
-    description:
-      "Zapisuj, filtruj a spravuj své běhy podle typu, času, vzdálenosti i tempa.",
-    icon: Footprints,
-    // video: runsVideo,
-  },
-  {
-    id: "calendar",
-    title: "Kalendář",
-    description:
-      "Sleduj své běhání v čase a měj lepší přehled o pravidelnosti i aktivitě.",
-    icon: CalendarDays,
-    // video: calendarVideo,
-  },
-  {
-    id: "stats",
-    title: "Statistiky",
-    description:
-      "Analyzuj tempo, objem, typy běhů i dlouhodobý trend svého tréninku.",
-    icon: BarChart3,
-    // video: statsVideo,
-  },
-  {
-    id: "profile",
-    title: "Profil",
-    description:
-      "Spravuj svůj profil, bio, vazby na komunitu a veřejnou prezentaci běhání.",
-    icon: User,
-    // video: profileVideo,
-  },
-];
 
 const Screenshots = () => {
   const [activeId, setActiveId] = useState("overview");

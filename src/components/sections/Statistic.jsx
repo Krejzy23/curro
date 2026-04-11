@@ -1,24 +1,7 @@
 import React from "react";
-import { LineChart, Flame, PieChart } from "lucide-react";
 import statsPreview from "../../assets/image/stats-preview.png";
+import { statisticsItems } from "../../constants";
 
-const statisticsItems = [
-  {
-    icon: LineChart,
-    title: "Tempo v čase",
-    text: "Sleduj vývoj průměrného tempa napříč měsíci a odhaluj skutečný progres.",
-  },
-  {
-    icon: Flame,
-    title: "Konzistence běhání",
-    text: "Heatmapa i přehled aktivit pomáhají budovat pravidelnost a udržet si návyk.",
-  },
-  {
-    icon: PieChart,
-    title: "Rozložení tréninku",
-    text: "Získej rychlý přehled o typech běhů a udržuj lepší rovnováhu v tréninku.",
-  },
-];
 
 const Statistics = () => {
   return (
