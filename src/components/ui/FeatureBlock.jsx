@@ -35,7 +35,7 @@ export const FeatureBlock = ({ feature, reverse = false }) => {
         </div>
 
         {feature.tags && (
-          <div className="mt-7 flex flex-wrap gap-3">
+          <div className="mt-7 flex flex-wrap justify-center gap-3">
             {feature.tags.map((tag) => (
               <span
                 key={tag.label}

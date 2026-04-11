@@ -12,7 +12,7 @@ const Screenshots = () => {
   return (
     <section
       id="screenshots"
-      className="relative px-6 py-20 md:px-10 lg:px-16 lg:py-28"
+      className="relative px-6 py-10 md:py-20 md:px-10 lg:px-16 lg:py-28"
     >
       <div className="mx-auto max-w-7xl">
         <div className="max-w-3xl">

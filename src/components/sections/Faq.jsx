@@ -8,7 +8,7 @@ const Faq = () => {
   return (
     <section
       id="faq"
-      className="relative px-6 py-20 md:px-10 lg:px-16 lg:py-28"
+      className="relative px-6 py-10 md:py-20 md:px-10 lg:px-16 lg:py-28"
     >
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
         <div>

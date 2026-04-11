@@ -47,14 +47,14 @@ const Hero = () => {
             </a>
           </div>
 
-          <div className="mt-10 flex flex-wrap gap-3">
-            <span className="rounded-full border border-white/10 bg-zinc-900/70 px-4 py-2 text-sm font-medium text-zinc-300">
+          <div className="mt-10 flex flex-wrap gap-3 justify-center">
+            <span className="rounded-full border border-white/10 bg-zinc-900/70 px-4 py-2 text-xs md:text-sm font-medium text-zinc-300">
               Tempo, čas a vzdálenost
             </span>
-            <span className="rounded-full border border-white/10 bg-zinc-900/70 px-4 py-2 text-sm font-medium text-zinc-300">
+            <span className="rounded-full border border-white/10 bg-zinc-900/70 px-4 py-2 text-xs md:text-sm font-medium text-zinc-300">
               Statistiky a týdenní cíle
             </span>
-            <span className="rounded-full border border-white/10 bg-zinc-900/70 px-4 py-2 text-sm font-medium text-zinc-300">
+            <span className="rounded-full border border-white/10 bg-zinc-900/70 px-4 py-2 text-xs md:text-sm font-medium text-zinc-300">
               Sdílené běhy a komunita
             </span>
           </div>

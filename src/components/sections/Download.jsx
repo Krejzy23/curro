@@ -5,7 +5,7 @@ const Download = () => {
   return (
     <section
       id="download"
-      className="relative px-6 py-20 md:px-10 lg:px-16 lg:py-28"
+      className="relative px-6 py-10 md:py-20 md:px-10 lg:px-16 lg:py-28"
     >
       <div className="mx-auto max-w-6xl">
         <div className="relative overflow-hidden rounded-[36px] border border-white/10 bg-zinc-900/80 px-6 py-10 shadow-[0_20px_80px_rgba(0,0,0,0.35)] backdrop-blur md:px-10 md:py-14 lg:px-14 lg:py-16">
@@ -51,7 +51,7 @@ const Download = () => {
                 </a>
               </div>
 
-              <div className="mt-6 flex flex-wrap gap-3 text-sm text-zinc-500">
+              <div className="mt-6 flex flex-wrap gap-3 text-sm text-zinc-500 justify-center">
                 <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5">
                   Tracking běhů
                 </span>

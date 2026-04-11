@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="relative px-6 pt-16 pb-10 md:px-10 lg:px-16">
+    <footer className="relative px-6 pt-16 pb-4 md:px-10 lg:px-16">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-10 border-t border-white/10 pt-10 md:grid-cols-3 lg:grid-cols-4">
           
@@ -98,6 +98,11 @@ const Footer = () => {
               Terms
             </Link>
           </div>
+        </div>
+        <div className="flex flex-row items-center justify-center mt-4">
+        <p className="text-zinc-600 text-xs">Created by </p>
+        <p className="text-zinc-500 font-semibold text-xs px-1">Aleš Krejzl</p>
+
         </div>
       </div>
     </footer>

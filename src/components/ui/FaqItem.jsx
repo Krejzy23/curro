@@ -8,7 +8,7 @@ export const FaqItem = ({ item, isOpen, onToggle }) => {
         onClick={onToggle}
         className="flex w-full items-center justify-between gap-4 px-5 py-5 text-left md:px-6"
       >
-        <span className="text-base font-bold text-white md:text-lg">
+        <span className="text-sm font-bold text-white md:text-lg">
           {item.question}
         </span>
 
@@ -36,7 +36,7 @@ export const FaqItem = ({ item, isOpen, onToggle }) => {
         <div className="overflow-hidden">
           <div className="px-5 pb-5 md:px-6 md:pb-6">
             <div className="h-px w-full bg-white/10" />
-            <p className="pt-4 text-sm leading-7 text-zinc-400 md:text-base">
+            <p className="pt-4 text-xs leading-5 md:leading-7 text-zinc-400 md:text-base">
               {item.answer}
             </p>
           </div>
