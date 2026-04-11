@@ -16,6 +16,19 @@ import trackingImage from "../assets/image/tracking-collage.png";
 import progressImage from "../assets/image/progress-collage.png";
 import communityImage from "../assets/image/community-collage.png";
 
+import overviewVideo from "../assets/videos/overview.mp4";
+import runsVideo from "../assets/videos/runs.mp4";
+import calendarVideo from "../assets/videos/calendar.mp4";
+import statsVideo from "../assets/videos/stats.mp4";
+import profileVideo from "../assets/videos/profile.mp4";
+
+export const navItems = [
+  { label: "Funkce", id: "features" },
+  { label: "Statistiky", id: "statistics" },
+  { label: "Jak funguje", id: "screenshots" },
+  { label: "FAQ", id: "faq" },
+];
+
 //Features page
 export const features = [
   {
@@ -105,7 +118,7 @@ export const tourItems = [
     description:
       "Rychlý souhrn aktivit, měsíčních statistik a aktuální formy na jednom místě.",
     icon: LayoutDashboard,
-    // video: overviewVideo,
+    video: overviewVideo,
   },
   {
     id: "runs",
@@ -113,7 +126,7 @@ export const tourItems = [
     description:
       "Zapisuj, filtruj a spravuj své běhy podle typu, času, vzdálenosti i tempa.",
     icon: Footprints,
-    // video: runsVideo,
+    video: runsVideo,
   },
   {
     id: "calendar",
@@ -121,7 +134,7 @@ export const tourItems = [
     description:
       "Sleduj své běhání v čase a měj lepší přehled o pravidelnosti i aktivitě.",
     icon: CalendarDays,
-    // video: calendarVideo,
+    video: calendarVideo,
   },
   {
     id: "stats",
@@ -129,7 +142,7 @@ export const tourItems = [
     description:
       "Analyzuj tempo, objem, typy běhů i dlouhodobý trend svého tréninku.",
     icon: BarChart3,
-    // video: statsVideo,
+    video: statsVideo,
   },
   {
     id: "profile",
@@ -137,6 +150,41 @@ export const tourItems = [
     description:
       "Spravuj svůj profil, bio, vazby na komunitu a veřejnou prezentaci běhání.",
     icon: User,
-    // video: profileVideo,
+    video: profileVideo,
+  },
+];
+
+// FAQ
+
+export const faqItems = [
+  {
+    question: "Co všechno si v CURRO můžu u běhu sledovat?",
+    answer:
+      "CURRO ti umožní zaznamenávat čas, vzdálenost a tempo každého běhu. Zároveň si můžeš ukládat více běhů za jeden den a mít přehled o celé své aktivitě na jednom místě.",
+  },
+  {
+    question: "Můžu si běhy filtrovat podle typu tréninku?",
+    answer:
+      "Ano. Běhy si můžeš rozdělovat a filtrovat podle typu, například na easy, long, recovery, interval nebo tempo. Díky tomu se v historii aktivit rychle zorientuješ.",
+  },
+  {
+    question: "Jak fungují statistiky v aplikaci?",
+    answer:
+      "V části Statistiky najdeš přehled tempa, objemu běhání, rozložení typů běhů, měsíčních trendů i heatmapu pravidelnosti. Statistiky ti pomohou lépe pochopit, jak se tvoje běhání vyvíjí v čase.",
+  },
+  {
+    question: "Je CURRO vhodné i pro začátečníky?",
+    answer:
+      "Ano. Aplikace je navržená tak, aby byla přehledná a užitečná jak pro začínající běžce, tak pro ty, kteří chtějí sledovat svůj výkon detailněji a dlouhodobě.",
+  },
+  {
+    question: "Má aplikace i komunitní funkce?",
+    answer:
+      "Ano. Můžeš vyhledávat uživatele, sledovat jejich aktivitu, sdílet své běhy, komentovat a dávat lajky. Součástí aplikace je také vlastní profil s bio a dalšími informacemi.",
+  },
+  {
+    question: "Proč používat CURRO místo obyčejného běžeckého deníku?",
+    answer:
+      "CURRO spojuje tracking běhů, přehledné statistiky a komunitní prvky do jedné aplikace. Nejde jen o zapisování aktivit, ale o nástroj, který ti pomůže budovat konzistenci a udržet motivaci.",
   },
 ];

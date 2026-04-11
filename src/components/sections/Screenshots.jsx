@@ -1,12 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { tourItems } from "../../constants";
 
-// import overviewVideo from "../../assets/videos/overview.mp4";
-// import runsVideo from "../../assets/videos/runs.mp4";
-// import calendarVideo from "../../assets/videos/calendar.mp4";
-// import statsVideo from "../../assets/videos/stats.mp4";
-// import profileVideo from "../../assets/videos/profile.mp4";
-
 const Screenshots = () => {
   const [activeId, setActiveId] = useState("overview");
 
@@ -39,7 +33,7 @@ const Screenshots = () => {
         <div className="mt-14 grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           {/* phone / video */}
           <div className="flex justify-center lg:justify-start">
-            <div className="relative w-[300px] md:w-[340px]">
+            <div className="relative w-75 md:w-85">
               <div className="pointer-events-none absolute -inset-8 rounded-[60px] bg-lime-400/10 blur-3xl" />
 
               <div className="relative rounded-[42px] border border-white/10 bg-zinc-950 p-2 shadow-[0_30px_100px_rgba(0,0,0,0.55)]">

@@ -2,7 +2,6 @@ import React from "react";
 import statsPreview from "../../assets/image/stats-preview.png";
 import { statisticsItems } from "../../constants";
 
-
 const Statistics = () => {
   return (
     <section
@@ -62,17 +61,20 @@ const Statistics = () => {
                 key={item.title}
                 className="rounded-[28px] border border-white/10 bg-zinc-900/60 p-5"
               >
-                <div className="inline-flex rounded-2xl bg-lime-400 p-3 text-black">
-                  <Icon size={20} />
+                <div className="flex flex-row lg:flex-col justify-between text-black ">
+                  <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-lime-400 p-3">
+                    <Icon />
+                  </div>
+                <div className="flex flex-col px-4 lg:px-0 lg:mt-3">
+                  <h3 className="text-sm lg:text-xl font-bold text-white">
+                    {item.title}
+                  </h3>
+
+                  <p className="text-xs leading-4 text-zinc-400 md:text-base">
+                    {item.text}
+                  </p>
                 </div>
-
-                <h3 className="mt-4 text-xl font-bold text-white">
-                  {item.title}
-                </h3>
-
-                <p className="mt-3 text-sm leading-6 text-zinc-400 md:text-base">
-                  {item.text}
-                </p>
+                </div>
               </div>
             );
           })}

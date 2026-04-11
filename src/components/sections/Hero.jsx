@@ -1,7 +1,6 @@
 import React from "react";
-import appScreenshot from "../../assets/homescreenHero.png"
+import appScreenshot from "../../assets/homescreenHero.png";
 import {
-  Activity,
   Timer,
   Users,
   Heart,
@@ -11,7 +10,7 @@ import {
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden px-6 pt-24 pb-20 md:px-10 lg:px-16 lg:pt-32 lg:pb-28">
+    <section className="relative overflow-hidden px-6 pb-20 md:px-10 lg:px-16 lg:-mt-4 lg:pb-28">
       {/* glow */}
       <div className="pointer-events-none absolute top-24 left-40 h-52 w-52 rounded-full bg-lime-400/10 blur-3xl" />
       <div className="pointer-events-none absolute top-32 left-52 h-72 w-72 rounded-full bg-lime-500/10 blur-3xl" />
@@ -95,21 +94,24 @@ const Hero = () => {
         <div className="relative flex justify-center lg:justify-end">
           <div className="relative w-full max-w-140">
             {/* floating card top */}
-            <div className="absolute left-0 top-10 z-20 hidden w-52 rounded-[28px] border border-lime-400/30 bg-zinc-900/90 p-4 shadow-2xl backdrop-blur md:block">
+            <div className="absolute left-0 top-14 z-20 hidden w-52 rounded-[28px] border border-lime-400/30 bg-zinc-900/90 p-4 shadow-2xl backdrop-blur md:block">
               <div className="flex items-center justify-between">
                 <p className="text-xs font-semibold uppercase tracking-[2px] text-lime-400">
                   Tempo
                 </p>
-                <Activity size={18} className="text-lime-400" />
+                <Timer size={18} className="text-lime-400" />
               </div>
-              <p className="mt-4 text-3xl font-black text-white">4:52</p>
-              <p className="text-sm text-zinc-500">min / km</p>
+              <div className="flex flex-row items-center">
+              <p className="mt-4 text-3xl font-black text-white">5:23</p>
+              <p className="text-lg px-2 mt-6 text-zinc-500">min / km</p>
+
+              </div>
             </div>
 
             {/* screenshot / mockup */}
             <div className="relative mx-auto w-75 md:w-85">
-              <div className="rounded-[42px] border border-white/10 bg-zinc-950 p-2 shadow-[0_30px_100px_rgba(0,0,0,0.55)]">
-                <div className="overflow-hidden rounded-[34px] border border-white/10 bg-zinc-900">
+              <div className=" bg-zinc-950 p-2 shadow-[0_30px_100px_rgba(0,0,0,0.55)]">
+                <div className="overflow-hidden">
                   <img
                     src={appScreenshot}
                     alt="Ukázka aplikace CURRO"
@@ -121,9 +123,12 @@ const Hero = () => {
 
             {/* floating card right */}
             <div className="absolute -right-2 bottom-16 z-20 hidden w-56 rounded-[28px] border border-white/10 bg-zinc-900/90 p-4 shadow-2xl backdrop-blur md:block">
-              <p className="text-xs font-semibold uppercase tracking-[2px] text-lime-400">
-                Aktivita přátel
-              </p>
+              <div className="flex flex-row items-center justify-between">
+                <p className="text-xs font-semibold uppercase tracking-[2px] text-lime-400">
+                  Aktivita přátel
+                </p>
+                <Users size={18} className="text-lime-400" />
+              </div>
               <div className="mt-4 flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-lime-400 text-black">
                   <Heart size={18} />
@@ -146,9 +151,12 @@ const Hero = () => {
 
             {/* floating card bottom left */}
             <div className="absolute bottom-0 left-4 z-20 hidden w-52 rounded-[28px] border border-white/10 bg-zinc-900/90 p-4 shadow-2xl backdrop-blur md:block">
-              <p className="text-xs font-semibold uppercase tracking-[2px] text-lime-400">
-                Týdenní cíl
-              </p>
+              <div className="flex flex-row justify-between">
+                <p className="text-xs font-semibold uppercase tracking-[2px] text-lime-400">
+                  Týdenní cíl
+                </p>
+                <Target size={18} className="text-lime-400" />
+              </div>
               <p className="mt-3 text-3xl font-black text-white">18 / 25 km</p>
               <div className="mt-4 h-2.5 rounded-full bg-white/10">
                 <div className="h-2.5 w-[72%] rounded-full bg-lime-400" />

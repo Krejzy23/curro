@@ -4,7 +4,7 @@ import Footer from "./components/layout/Footer";
 import Hero from "./components/sections/Hero";
 import Features from "./components/sections/Features";
 import Screenshots from "./components/sections/Screenshots";
-import Statistic from "./components/sections/Statistic";
+import Statistics from "./components/sections/Statistics";
 import Faq from "./components/sections/Faq";
 import Download from "./components/sections/Download";
 
@@ -15,7 +15,7 @@ function App() {
       <main>
         <Hero />
         <Features />
-        <Statistic />
+        <Statistics />
         <Screenshots />
         <Faq />
         <Download />
