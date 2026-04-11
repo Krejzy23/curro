@@ -1,6 +1,6 @@
 import React from "react";
 import { LineChart, Flame, PieChart } from "lucide-react";
-// import statsPreview from "../../assets/statistics/stats-preview.png";
+import statsPreview from "../../assets/image/stats-preview.png";
 
 const statisticsItems = [
   {
@@ -46,7 +46,7 @@ const Statistics = () => {
           <div className="relative mx-auto max-w-6xl">
             <div className="pointer-events-none absolute -inset-6 rounded-[40px] bg-lime-400/5 blur-3xl" />
 
-            <div className="relative rounded-[32px] border border-white/10 bg-zinc-900/80 p-3 shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur">
+            <div className="relative rounded-4xl border border-white/10 bg-zinc-900/80 p-3 shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur">
               <div className="flex items-center justify-between border-b border-white/10 px-3 pb-3">
                 <div className="flex items-center gap-2">
                   <span className="h-3 w-3 rounded-full bg-red-500 shadow-sm shadow-red-500/30" />
@@ -59,12 +59,12 @@ const Statistics = () => {
                 </span>
               </div>
 
-              <div className="mt-3 overflow-hidden rounded-[24px] border border-white/10 bg-zinc-950">
-                {/* <img
+              <div className="mt-3 overflow-hidden rounded-3xl border border-white/10 bg-zinc-950">
+                <img
                   src={statsPreview}
                   alt="Statistiky aplikace CURRO"
                   className="block w-full object-cover"
-                /> */}
+                />
               </div>
             </div>
           </div>

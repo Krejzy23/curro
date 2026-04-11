@@ -15,8 +15,8 @@ function App() {
       <main>
         <Hero />
         <Features />
-        <Screenshots />
         <Statistic />
+        <Screenshots />
         <Faq />
         <Download />
       </main>
