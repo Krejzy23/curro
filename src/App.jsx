@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import BackgroundLayout from "./components/layout/BackgroundLayout";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
@@ -9,6 +10,19 @@ import Faq from "./components/sections/Faq";
 import Download from "./components/sections/Download";
 
 function App() {
+  useEffect(() => {
+    document.title =
+      "CURRO – Běžecká aplikace pro tracking, statistiky a komunitu";
+
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        "content",
+        "CURRO je běžecká aplikace pro sledování času, vzdálenosti a tempa. Zaznamenávej běhy, sleduj statistiky, buduj konzistenci a sdílej aktivitu s komunitou."
+      );
+    }
+  }, []);
+
   return (
     <BackgroundLayout>
       <Navbar />
@@ -20,7 +34,6 @@ function App() {
         <Faq />
         <Download />
       </main>
-
       <Footer />
     </BackgroundLayout>
   );

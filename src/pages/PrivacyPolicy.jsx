@@ -1,9 +1,19 @@
-import React from 'react'
+import { useEffect } from "react";
 
 const PrivacyPolicy = () => {
-  return (
-    <div>PrivacyPolicy</div>
-  )
-}
+  useEffect(() => {
+    document.title = "Zásady ochrany osobních údajů | CURRO";
 
-export default PrivacyPolicy
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        "content",
+        "Zásady ochrany osobních údajů aplikace CURRO."
+      );
+    }
+  }, []);
+
+  return <div>...</div>;
+};
+
+export default PrivacyPolicy;
