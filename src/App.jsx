@@ -8,6 +8,7 @@ import Screenshots from "./components/sections/Screenshots";
 import Statistics from "./components/sections/Statistics";
 import Faq from "./components/sections/Faq";
 import Download from "./components/sections/Download";
+import Training from "./components/sections/Training";
 
 function App() {
   useEffect(() => {
@@ -30,6 +31,7 @@ function App() {
         <Hero />
         <Features />
         <Statistics />
+        <Training />
         <Screenshots />
         <Faq />
         <Download />

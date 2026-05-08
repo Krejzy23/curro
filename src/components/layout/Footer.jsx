@@ -35,6 +35,9 @@ const Footer = () => {
               <a href="/#statistics" className="text-zinc-400 hover:text-white">
                 Statistiky
               </a>
+              <a href="/#training" className="text-zinc-400 hover:text-white">
+                Tréninkový plán
+              </a>
               <a href="/#screenshots" className="text-zinc-400 hover:text-white">
                 Jak funguje
               </a>

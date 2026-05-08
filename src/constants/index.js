@@ -15,6 +15,7 @@ import {
 import trackingImage from "../assets/image/tracking-collage.png";
 import progressImage from "../assets/image/progress-collage.png";
 import communityImage from "../assets/image/community-collage.png";
+import trainingImage from "../assets/image/training-collage.png";
 
 import overviewVideo from "../assets/videos/overview.mp4";
 import runsVideo from "../assets/videos/runs.mp4";
@@ -25,6 +26,7 @@ import profileVideo from "../assets/videos/profile.mp4";
 export const navItems = [
   { label: "Funkce", id: "features" },
   { label: "Statistiky", id: "statistics" },
+  { label: "Tréninkový plán", id: "training" },
   { label: "Jak funguje", id: "screenshots" },
   { label: "FAQ", id: "faq" },
   { label: "Download", id: "download" },
@@ -44,11 +46,13 @@ export const features = [
       "Filtrování podle typu běhu",
     ],
     tags: [
-      { label: "Easy", type: "easy" },
-      { label: "Long", type: "long" },
-      { label: "Recovery", type: "recovery" },
-      { label: "Intervals", type: "interval" },
+      { label: "Lehký běh", type: "easy" },
+      { label: "Dlouhý běh", type: "long" },
+      { label: "Regenerace", type: "recovery" },
+      { label: "Intervaly", type: "interval" },
       { label: "Tempo", type: "tempo" },
+      { label: "Fartlek", type: "fartlek" },
+      { label: "Kopce", type: "hills" },
     ],
     icon: SportShoe,
     image: trackingImage,
@@ -81,6 +85,20 @@ export const features = [
     icon: Users,
     image: communityImage,
   },
+  {
+    id: "training",
+    eyebrow: "Trénink",
+    title: "Závodní plán podle Jeffa Gallowaye",
+    description:
+      "Personalizovaný běžecký plán pro 5 km, 10 km, půlmaraton i maraton. Uživatel si zvolí délku přípravy, start plánu i výchozí úroveň a aplikace postaví trénink podle 3 fází Gallowayovy tréninkové pyramidy.",
+    bullets: [
+      "Cíle pro 5 km, 10 km, půlmaraton i maraton",
+      "Příprava na 16, 20 nebo 24 týdnů",
+      "3 navazující fáze s jasným fokusem a postupným progresem",
+    ],
+    icon: Users,
+    image: trainingImage,
+  }
 ];
 
 export const runTypeAccent = {
@@ -89,6 +107,8 @@ export const runTypeAccent = {
   interval: "bg-violet-400/15 text-violet-300 border-violet-400/30",
   long: "bg-cyan-400/15 text-cyan-300 border-cyan-400/30",
   recovery: "bg-lime-400/15 text-lime-300 border-lime-400/30",
+  fartlek: "bg-yellow-400/15 text-yellow-300 border-yellow-400/30",
+  hills: "bg-red-400/15 text-red-300 border-red-400/30"
 };
 
 //Statistic page
