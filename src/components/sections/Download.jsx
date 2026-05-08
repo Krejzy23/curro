@@ -59,6 +59,9 @@ const Download = () => {
                   Statistiky a progres
                 </span>
                 <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5">
+                  Trénink
+                </span>
+                <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5">
                   Komunita běžců
                 </span>
               </div>

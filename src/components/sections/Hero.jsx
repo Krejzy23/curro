@@ -57,6 +57,9 @@ const Hero = () => {
             <span className="rounded-full border border-white/10 bg-zinc-900/70 px-4 py-2 text-xs md:text-sm font-medium text-zinc-300">
               Sdílené běhy a komunita
             </span>
+            <span className="rounded-full border border-white/10 bg-zinc-900/70 px-4 py-2 text-xs md:text-sm font-medium text-zinc-300">
+              Závodní tréninkové plány
+            </span>
           </div>
         </div>
 

@@ -16,7 +16,7 @@ export default function Training() {
           </div>
 
           <h2 className="mt-6 text-3xl font-black tracking-tight text-white md:text-5xl">
-            Závodní plán podle tréninkové pyramidy{" "}
+            Závodní plán podle tréninkové pyramidy{" "}<br/>
             <span className="text-lime-400">Jeffa Gallowaye</span>
           </h2>
 
